@@ -1,24 +1,28 @@
 body {
     overflow: hidden;
 }
+
 #accordion {
     list-style: none;
     padding: 0;
     height: 100vh;
     overflow: hidden;
 }
+
 #accordion h1 {
     position: absolute;
     font-size: 6vh;
     background-color:rgba(0,0,0,0.3);
     padding: 0px 10px;
 }
+
 #accordion .vertical-text {
     transform: rotate(90deg);
     transform-origin: left bottom 0;
     float: left;
 }
-#accordion .list{
+
+#accordion .list {
     float: left;
     display: block;
     height: 100vh;
@@ -36,9 +40,5 @@ body {
 
 #accordion .active {
     width: 50vw; /* 50 + 5 * 10 = 100 */
-}
-#accordion .blur-filter {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
 }
 

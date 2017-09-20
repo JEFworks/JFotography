@@ -6,28 +6,40 @@ layout: default
 
 <div id="main">
     <ul id='accordion'>
-	<li class='list active'>
-		<img src='assets/images/panel/1.jpg' class='slide'>
-		<a href="conceptual"><h1 class='vertical-text'>Conceptual</h1></a>
+	<li class='list active' style="
+				       background: url('assets/images/pattern.png') top left repeat,
+				                   url('assets/images/panel/1.jpg') top center / cover no-repeat;
+			 ">
+	    <a href="conceptual"><h1 class='vertical-text'>Conceptual</h1></a>
 	</li>
-	<li class='list'>
-	    <img src='assets/images/panel/2.jpg' class='slide blur-filter'>
+	<li class='list' style="
+				       background: url('assets/images/pattern.png') top left repeat,
+				                   url('assets/images/panel/2.jpg') top center / cover no-repeat;
+			 ">
 	    <a href="portrait"><h1 class='vertical-text'>Portrait</h1></a>
 	</li>
-	<li class='list'>
-	    <img src='assets/images/panel/3.jpg' class='slide blur-filter'>
+	<li class='list' style="
+				       background: url('assets/images/pattern.png') top left repeat,
+				                   url('assets/images/panel/3.jpg') top center / cover no-repeat;
+			 ">
 	    <a href="macro"><h1 class='vertical-text'>Macro</h1></a>
 	</li>
-	<li class='list'>
-	    <img src='assets/images/panel/4.jpg' class='slide blur-filter'>
+	<li class='list' style="
+				       background: url('assets/images/pattern.png') top left repeat,
+				                   url('assets/images/panel/4.jpg') top center / cover no-repeat;
+			 ">
 	    <a href="nature"><h1 class='vertical-text'>Nature</h1></a>
 	</li>
-	<li class='list'>
-	    <img src='assets/images/panel/5.jpg' class='slide blur-filter'>
+	<li class='list' style="
+				       background: url('assets/images/pattern.png') top left repeat,
+				                   url('assets/images/panel/5.jpg') top center / cover no-repeat;
+			 ">
 	    <a href="travel"><h1 class='vertical-text'>Travel</h1></a>
 	</li>
-	<li class='list'>
-	    <img src='assets/images/panel/6.jpg' class='slide blur-filter'>
+	<li class='list' style="
+				       background: url('assets/images/pattern.png') top left repeat,
+				                   url('assets/images/panel/6.jpg') top center / cover no-repeat;
+			 ">
 	    <a href="personal"><h1 class='vertical-text'>Personal</h1></a>
 	</li>
     </ul>
@@ -42,13 +54,13 @@ layout: default
      }, {
 	 duration: 500,
 	 queue: false
-     }).children(':first').toggleClass('blur-filter');
+     });
      activeItem = this;
      $(activeItem).animate({
 	 width: '50vw'
      }, {
 	 duration: 500,
 	 queue: false
-     }).children(':first').removeClass('blur-filter');
+     });
  });
 </script>

@@ -13,7 +13,7 @@
 }
 .cb-slideshow:after {
     content: '';
-    background: transparent url('assets/images/pattern.png') repeat top left;
+    background: transparent url('../images/pattern.png') repeat top left;
 }
 
 .cb-slideshow li span { 
