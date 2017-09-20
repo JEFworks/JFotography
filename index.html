@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/assets/css/slide.css"/>   
+
+<!-- Main -->
+<div id="slideshow">
+    <ul class="cb-slideshow">
+	{% assign counter = 0 %}
+	{% for image in site.static_files %}
+	{% if image.path contains 'images/slider' %}
+	<li>
+	    <span style='
+			 background-image: url("{{ site.baseurl }}{{ image.path }}");
+			 -webkit-animation-delay: {{ counter }}s;
+			 -moz-animation-delay: {{ counter }}s;
+			 -o-animation-delay: {{ counter }}s;
+			 -ms-animation-delay: {{ counter }}s;
+			 animation-delay: {{ counter }}s; 
+			 '>
+	    </span>
+	</li>
+	{% assign counter=counter | plus:6 %} <!-- increment by 36/(# of pictures) -->
+	{% endif %}
+	{% endfor %}
+    </ul>
+</div>
+

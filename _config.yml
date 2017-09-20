@@ -1,0 +1,29 @@
+# Base configs
+baseurl: ""
+image_fulls_loc: "/assets/images/fulls"
+image_thumbs_loc: "/assets/images/thumbs"
+google_analytics: "UA-46465113-2"
+
+# UI configs
+logo: "assets/images/logo.png"
+title: "JFotography"
+subtitle: "Photography by Jean Fan"
+author: "Jean Fan"
+bio: "Jean Fan is the sole proprietor and photographer of JFotography. She started JFotography as a professional web base to promote her photography as well as share resources and knowledge with fellow aspiring photographers. 
+<br><br>
+Jean strongly promotes self-directed learning in photography. On this site you will find various tutorials, downloadable post-editing actions/scripts, and more to help you learn how to take great photos as well as selections from Jean's photography portfolio. 
+<br><br>
+Jean is currently represented for licensing by Trevillion Images. 
+<br><br>
+Although adamantly passionate for photography, Jean pursues photography only as a serious hobby. She seeks formal training as a scientist, engineer and mathematician. She received her B.S in biomedical engineering and applied mathematics at Johns Hopkins University and is currently pursuing her Ph.D at Harvard University in bioinformatics. She hopes to some day become a professor. 
+<br><br>
+Thanks for looking!"
+social_urls:
+  facebook: "https://www.facebook.com/JFotography"
+  deviantart: "https://jeanfan.deviantart.com"
+  twitter: "https://www.twitter.com/JEFworks"
+  instagram: "https://www.instagram.com/JEFworks"
+  linkedin: "https://in.linkedin.com/in/jeanfan"
+  github: "https://www.github.com/JEFworks"
+  
+

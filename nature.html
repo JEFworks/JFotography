@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<!-- Main -->
+<div id="main">
+    {% for image in site.static_files %}
+    {% if image.path contains 'fulls/nature' %}
+    <article class="thumb">
+        <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/nature/{{ image.name }}" class="image">
+            <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/nature/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
+    </article>
+    {% endif %}
+    {% endfor %}
+</div>
