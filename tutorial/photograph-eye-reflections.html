@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="content">
+    <h1>Photograph Eye Reflections</h1>
+        
+    <hr>
+
+    This tutorial will teach you how to take pictures such as:
+    <div id="main">
+	{% for image in site.static_files %}
+	{% if image.path contains 'eye-reflection' %}
+	<article class="thumb">
+	    <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+		<img src="{{ site.baseurl }}{{ image.path }}" alt="" data-name="{{ image.name }}"/></a>
+	</article>
+	{% endif %}
+	{% endfor %}
+    </div>
+    
+    <hr>
+
+    <h3>You will need</h3>
+    <ul>
+	<li>An object to reflect</li>
+	<li>A macro lens or a camera with a macro setting</li>
+	<li>A strong light source (such as a large window on a sunny day)</li>
+	<li>A tripod (if you are doing this alone)</li>
+    </ul>
+
+    
+    <hr>
+    
+    <h3>Procedure</h3>
+    <ul>
+	<li>Sit close to a strong light source. Make sure your sitting arrangement allows light to directly hit the object you intend to reflect for the best reflection.</li>
+	<li>Hold or place the object you intend to reflect to the side of your eye. The object should be facing the light source.</li>
+	<li>Adjust the object's distance from your eye accordingly depending on your object's size for the desired composition of the reflection. For most house-hold hand-sized objects, hold the object directly against the side of your face for the best results.</li>
+	<li>Look towards the side of your face, towards your ear, keeping the object you want to reflect in your peripheral vision. This will allow the object to form a reflection in the dark iris portion of your eye as opposed to the white scelera portion.</li>
+	<li>If you are doing this shot alone and using a tripod, keep the camera at roughly arms length for best results.</li>
+    </ul>
+
+    <div align="center"><img src="{{site.baseurl}}/assets/tutorials/eyereflect.jpg" width=100%></div>
+
+    <hr>
+
+    <h3>Tips</h3>
+    <ul>
+	<li>Though it is very helpful to have a friend with you to help you with composition, you can do this by yourself with a tripod and repeated trials. Keep your camera and tripod at arm's length to simplify and speed up the process.</li>
+	<li>Experiment with your angle and the angle of the object you intend to reflect with respect to the light source. Progressively turn towards the light source and see if it improves the reflection.</li>
+	<li>You will likely need to crop the final image into the proper composition as seen in the image on the right.</li>
+	<li>Try this outside on a sunny day!</li>
+    </ul>
+
+    
+    
+</div>

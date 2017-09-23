@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="content">
+    <h1>Forced Perspective with Bokeh</h1>
+    
+    <hr>
+
+    This tutorial will teach you how to take pictures such as:
+    <div id="main">
+	{% for image in site.static_files %}
+	{% if image.path contains '/bokeh/' %}
+	<article class="thumb">
+	    <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+		<img src="{{ site.baseurl }}{{ image.path }}" alt="" data-name="{{ image.name }}"/></a>
+	</article>
+	{% endif %}
+	{% endfor %}
+    </div>
+    
+    <hr>
+
+    <h3>You will need</h3>
+    <ul>
+	<li><b>Christmas lights (Holiday lights, Noel lights):</b>
+	    Christmas lights will appear as bokeh "bubbles" viewed from an unfocused camera.
+	    Use ties and hooks to arrange the Christmas lights into the desired shape.
+	    The photo comparison on the right depicts Christmas lights when the camera is focused on the lights and then unfocused.
+	    For more information about bokeh, consult a search engine.</li>
+	<li><b>a wide aperture lens (f/1.4 to f/2.8 recommended):</b>
+	    A wide aperture is necessary to achieve the shallow depth of field so that the foreground (where the model is) will be sharp while the background (where the Christmas lights are) will be blurry thereby creating bokeh bubbles.
+	    For more information on how aperture relates to depth of field, consult a search engine.</li>
+	<li>a Tripod and a placeholder (optional)</li>
+    </ul>
+
+    <hr>
+    
+    <h3>Procedure</h3>
+    <ul>
+	<li>Setup the Christmas lights in the background.</li>
+	<li>Position the model (or object) at least a few feet in front of the Christmas lights.</li>
+	<li>Focus your camera on the model.</li>
+	<li>Christmas lights should now appear as bokeh bubbles through the viewfinder. If not then, widen your aperture, increase the distance between the Christmas lights and the model and/or decrease the distance between the model and the camera. Then refocus the camera on the model.</li>
+	<li>Compose your shot through the viewfinder to see the bokeh bubbles. The rest is just some creative composition to integrate the bokeh bubbles with the model's pose.</li>
+    </ul>
+
+    <div align="center"><img src="{{ site.baseurl }}/assets/tutorials/bokeh_distance_example.jpg"></div>
+
+    <hr>
+
+    <h3>Tips</h3>
+    <ul>
+	<li>If you're doing this kind of shoot alone, a placeholder can help determine where you should stand relative to the camera and Christmas lights to achieve the best bokeh. </li>
+	<li>Make your own aperture disk or purchase them online to get custom shaped bokeh. For more information on how to make your own aperture disk for custom bokeh or the optics behind why this technique works, consult a search engine. </li>	
+    </ul>
+    <div align="center"><img src="{{ site.baseurl }}/assets/tutorials/custom_bokeh.jpg"></div>
+</div>
