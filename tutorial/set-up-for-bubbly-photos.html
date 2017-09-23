@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="content">
+    <h1>Set Up for Bubbly Photos</h1>
+    
+    <hr>
+
+    This tutorial will teach you how to take pictures such as:
+    <div id="main">
+	{% for image in site.static_files %}
+	{% if image.path contains 'bubbly-photos' %}
+	<article class="thumb">
+	    <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+		<img src="{{ site.baseurl }}{{ image.path }}" alt="" data-name="{{ image.name }}"/></a>
+	</article>
+	{% endif %}
+	{% endfor %}
+    </div>
+    
+    <hr>
+
+    <h3>You will need</h3>
+    <ul>
+	<li>A clear container (such as a square vase)</li>
+	<li>An object to make bubbly (such as a fruit)</li>
+	<li>Optional: some Styrofoam and a needle to secure the object to prevent floating</li>
+	<li>And the key ingredient responsible for all the bubbles: some plain seltzer water/carbonated water/sparkling water/etc (you can also use sodas but because of their sugar content, clean-up can get quite sticky)</li>
+    </ul>
+
+    <hr>
+    
+    <h3>Procedure</h3>
+    <div align="center"><img src="{{ site.baseurl }}/assets/tutorials/bubbly_setup.jpg"></div>
+    <ul>
+	<li>Cut a rectangular piece of Styrofoam that is a bit bigger than the clear container. The bigger size will allow the Styrofoam to push against the container. The resulting tension should hold the Styrofoam in place.</li>
+	<li>Place the object on the Styrofoam piece at the desired location. Secure the object in place with a needle, small nail or pin. The needle should penetrate the object at an angle to most effectively secure the object and keep it from floating. Bending the needle will also help secure the object.</li>
+	<li>Push the Styrofoam into the square vase. Be careful not to crack the Styrofoam! Push on the sides and edges of the Styrofoam for the best results. Use a pencil or blunt object to help with deeper containers. Adjust and cut the Styrofoam as needed.</li>
+	<li>Add the seltzer water. Wait a few minutes for bubbles to form. The longer you wait, generally the larger the bubbles. Do not shake or move the square vase! Movement will keep bubbles from forming on the object’s surface.</li>
+	<li>Set up your camera, preferably on a tripod and shoot. A macro setting or macro lens is preferred. If you do not have a macro lens, a small magnifying glass can create a great macro effect.</li>
+    </ul>
+
+    Example set up with strawberries pinned on Styrofoam pushed into a square vase, a background placed behind the vase, towels lining the vase to assist in clean-up, and of course seltzer water ready to be applied:
+    <div align="center"><img src="{{ site.baseurl }}/assets/tutorials/bubbly_setup_DSC_0225.jpg"></div>
+
+    <hr>
+
+    <h3>Tips</h3>
+    <ul>
+	<li>Try letting your object just float in the seltzer water!</li>
+	<li>If you must use a soda, pick a soda that does not have food coloring. Food coloring tends to make the water appear really murky (so choose Sprite not Mountain Dew).</li>
+	<li>Clean your vase! With proper lighting and cleaning, the glass of the vase should not affect the picture noticeably.</li>
+	<li>Bubbles can form on the sides of the vase. If they do, just brush them off with a pencil of straw.</li>
+	<li>Line your vase with towels to assist in the clean-up.</li>
+    </ul>
+    
+</div>
