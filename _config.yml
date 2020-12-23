@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "http://jef.works/JFotography"
+baseurl: "https://jfotography.net"
 image_fulls_loc: "assets/images/fulls"
 image_thumbs_loc: "assets/images/thumbs"
 google_analytics: "UA-18130075-6"
